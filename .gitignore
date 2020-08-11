@@ -32,3 +32,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+lerna-debug.log
+
+.env
+
+db
+
+configdb

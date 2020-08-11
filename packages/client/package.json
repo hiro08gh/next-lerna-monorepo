@@ -13,6 +13,7 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@types/react": "^16.9.46",
     "prettier": "^2.0.5"
   }
 }

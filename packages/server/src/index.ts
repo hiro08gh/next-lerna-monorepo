@@ -1,5 +1,16 @@
 import express from 'express';
 import { ApolloServer, gql } from 'apollo-server-express';
+import mongoose from 'mongoose';
+
+const MONGODB_URL: string = 'mongodb://localhost/test';
+
+mongoose.set('useFindAndModify', false)
+
+mongoose.connect(MONGODB_URL, { useNewUrlParser: true }).then(() => {
+  console.log('connected')
+}).catch((err) => {
+  console.log('error connection to MongoDB:', err.message)
+})
 
 const app = express()
 

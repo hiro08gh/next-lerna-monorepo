@@ -9,6 +9,7 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "lerna run build",
     "dev": "lerna run dev",
     "start:server": "lerna run start:server"
   }
